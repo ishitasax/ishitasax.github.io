@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montsserat&display=swap");
+::-moz-selection {
+  background: #f1828d;
+}
+::selection {
+  background: #f1828d;
+}
+
+::-moz-selection {
+  background: #f1828d;
+}
+
+html {
+  background: #000;
+  color: #fff;
+  font-family: "Montsserat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montsserat", sans-serif;
+}
+
+.heading {
+  font-weight: 100;
+  font-size: 2rem;
+}/*# sourceMappingURL=index.css.map */
