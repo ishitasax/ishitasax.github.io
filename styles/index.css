@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montsserat&display=swap");
+@import url("https://use.typekit.net/ekv2exw.css");
 ::-moz-selection {
   background: #f1828d;
 }
@@ -13,14 +14,33 @@
 html {
   background: #000;
   color: #fff;
-  font-family: "Montsserat", sans-serif;
+  font-family: "area-normal", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montsserat", sans-serif;
+  font-family: "area-normal", sans-serif;
+}
+
+body {
+  width: auto;
+}
+
+.header {
+  position: relative;
+  margin: 20rem 8rem 0 8rem;
 }
 
 .heading {
-  font-weight: 100;
+  line-height: 0%;
+  font-family: "area-normal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6rem;
+}
+
+.subheading {
+  font-family: "area-normal", sans-serif;
+  font-weight: 10;
+  font-style: normal;
   font-size: 2rem;
 }/*# sourceMappingURL=index.css.map */
