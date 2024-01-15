@@ -1,6 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Montsserat&display=swap')
-@import url("https://use.typekit.net/ekv2exw.css")
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display&display=swap')
     
 // Colours
 $em:         #f1828d
@@ -11,6 +10,8 @@ $codepen:    #204056
 $github:     #24292e
 $univ:       #212121
 $twitter:    #1DA1F2
+
+$font: "Inter", sans-serif
 
 @-ms-viewport
     width: device-width
@@ -24,10 +25,58 @@ $twitter:    #1DA1F2
 html
     background: #000
     color: #fff
-    font-family: 'area-normal', sans-serif
+    font-family: $font
 
 h1, h2, h3, h4, h5, h6
-    font-family: 'area-normal', sans-serif
+    font-family: $font
 
 body
     width: auto
+
+nav
+    position: absolute
+    padding: 1rem 2rem
+    top: 0
+    right: 0
+    font-family: $font
+    text-align: right
+    z-index: 99
+    
+    a
+        text-decoration: none
+        color: #fff
+        font-weight: 100
+
+        &:hover
+            text-decoration: underline
+    
+    ul
+        list-style-type: none
+        
+        li
+            display: inline-block
+            margin: 0 10px
+
+    @media (max-width: 720px)
+        padding: 1rem 1rem
+
+.main
+    position: relative
+    top: 0
+    width: auto
+    height: 100vh
+    line-height: 95vh
+    margin: 0 4rem
+
+    .main-text
+        display: inline-block
+        vertical-align: middle
+        line-height: 1rem
+    
+    @media (max-width: 720px)
+        margin: 0 2rem
+
+.footer
+    position: relative
+    padding: 1rem 2rem
+    color: rgba(#fff, 0.75)

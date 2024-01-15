@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montsserat&display=swap");
-@import url("https://use.typekit.net/ekv2exw.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display&display=swap");
 ::-moz-selection {
   background: #f1828d;
 }
@@ -14,33 +13,165 @@
 html {
   background: #000;
   color: #fff;
-  font-family: "area-normal", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "area-normal", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
   width: auto;
 }
 
-.header {
-  position: relative;
-  margin: 20rem 8rem 0 8rem;
+nav {
+  position: absolute;
+  padding: 1rem 2rem;
+  top: 0;
+  right: 0;
+  font-family: "Inter", sans-serif;
+  text-align: right;
+  z-index: 99;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 100;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+@media (max-width: 720px) {
+  nav {
+    padding: 1rem 1rem;
+  }
 }
 
-.heading {
-  line-height: 0%;
-  font-family: "area-normal", sans-serif;
+.main {
+  position: relative;
+  top: 0;
+  width: auto;
+  height: 100vh;
+  line-height: 95vh;
+  margin: 0 4rem;
+}
+.main .main-text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1rem;
+}
+@media (max-width: 720px) {
+  .main {
+    margin: 0 2rem;
+  }
+}
+
+.footer {
+  position: relative;
+  padding: 1rem 2rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.main .heading {
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-style: normal;
   font-size: 6rem;
 }
-
-.subheading {
-  font-family: "area-normal", sans-serif;
+.main .subheading {
+  font-family: "Inter", sans-serif;
   font-weight: 10;
-  font-style: normal;
   font-size: 2rem;
+}
+@media (max-width: 720px) {
+  .main .heading {
+    font-size: 4rem;
+  }
+  .main .subheading {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .main .heading {
+    font-size: 3rem;
+  }
+  .main .subheading {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 500px) {
+  .main .heading {
+    font-size: 2rem;
+  }
+  .main .subheading {
+    font-size: 1rem;
+  }
+}
+
+.work {
+  box-sizing: border-box;
+}
+.work .flex-grid {
+  display: flex;
+  justify-content: space-between;
+}
+.work .flex-grid .work-project {
+  width: 50%;
+}
+.work .flex-grid .work-project:first-child {
+  margin: 1rem 1rem 1rem 2rem;
+}
+.work .flex-grid .work-project:last-child {
+  margin: 1rem 2rem 1rem 1rem;
+}
+.work .flex-grid .work-project .project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: auto;
+  margin: 1rem 1rem;
+  border-radius: 1rem;
+  height: 66%;
+}
+.work .flex-grid .work-project .project-image img {
+  flex-shrink: 0;
+  width: 100%;
+}
+.work .flex-grid .work-project .project-text {
+  display: block;
+  margin: 0 1rem;
+}
+.work .flex-grid .work-project .project-text .heading {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.work .flex-grid .work-project .project-text .subheading {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  margin: 0.5rem 0 0 0;
+}
+@media (max-width: 720px) {
+  .work .flex-grid {
+    display: block;
+  }
+  .work .flex-grid .work-project {
+    width: auto;
+    margin: 2rem 1rem !important;
+  }
+  .work .flex-grid .work-project .project-text .heading {
+    font-size: 1.25rem;
+  }
+  .work .flex-grid .work-project .project-text .subheading {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=index.css.map */
