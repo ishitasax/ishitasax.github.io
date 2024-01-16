@@ -130,19 +130,29 @@ nav ul li {
 .work .flex-grid .work-project:last-child {
   margin: 1rem 2rem 1rem 1rem;
 }
+.work .flex-grid .work-project:hover .project-image {
+  transform: scale(1.015);
+  cursor: pointer;
+}
 .work .flex-grid .work-project .project-image {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   width: auto;
-  margin: 1rem 1rem;
-  border-radius: 1rem;
-  height: 66%;
+  margin: 1rem 0rem;
+  height: auto;
+  transition: transform 0.15s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  flex: 1;
 }
 .work .flex-grid .work-project .project-image img {
   flex-shrink: 0;
   width: 100%;
+  height: 420px;
+  border-radius: 1rem;
+  float: left;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .work .flex-grid .work-project .project-text {
   display: block;
